@@ -40,3 +40,27 @@ print(f"The length of your first name is {first_name_length}!")
 print(f"The length of your last name is {last_name_length}!")
 print("Wow!")
 print(f"Your name in uppercase would look like {first_name.upper()} {last_name.upper()}!")
+
+
+# -----------------------------------------------------------------------------------------Assignment 2----------------------------------------------------------------------------------------------
+# Create a program that asks the user for a positive number `n` and then prints the sum of all the numbers from 1 up to `n`. For example, if `n` = 5, the program should print the sum 1+2+3+4+5 = 15.
+
+
+input_number = int(input("Enter any number!"))
+# int catches the edgecase of not being a number 
+
+current = 1
+# Start at 1
+final = 0
+# Initialize sum value 
+
+while current <= input_number:
+# while current value is less than or equal to our inputed value
+    final += current
+    # current is added to sum 
+    current += 1
+    # we increment by 1 and continue the loop
+    # loop stops when the current number we are on is equal to the inputed value
+    
+# print(final)
+print(f"The sum of all the numbers leading up to {input_number} is {final}!")
