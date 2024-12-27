@@ -64,3 +64,24 @@ while current <= input_number:
     
 # print(final)
 print(f"The sum of all the numbers leading up to {input_number} is {final}!")
+
+
+# -----------------------------------------------------------------------------------------Assignment 3----------------------------------------------------------------------------------------------
+# Create a program that asks the user for a sentence (or any string of text) and then counts how many vowels (a, e, i, o, u) are in that sentence. Print the total number of vowels found.
+
+string = input("Say anything!")
+
+string_converted = string.lower()
+# converted to lowercase , alternativly we could check for uppercase as well
+
+
+
+vowels = 0
+#  init vowel count
+
+for char in string_converted:
+    if char in "aeiou":
+        vowels += 1
+
+print(f"The amount of vowels in what you said is {vowels}!")
+
