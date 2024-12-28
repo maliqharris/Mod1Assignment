@@ -85,3 +85,17 @@ for char in string_converted:
 
 print(f"The amount of vowels in what you said is {vowels}!")
 
+
+
+
+
+# Edgecase for first_name
+space = 0
+for char in first_name:
+    if char in " ":
+        space += 1
+
+real_length = first_name_length - space 
+
+print(f"Your first name without and spaces would be {real_length}")
+
