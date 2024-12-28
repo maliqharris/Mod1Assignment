@@ -17,11 +17,11 @@ week_index = today_is.weekday()
 # Gives is a number corosponding to the day of the week - 0 is Monday, 1 is tuesday and so on
 
 # -------------------Tests-------------------------
-# print(today_is)
-# print(calendar.today_is)
-# print(today_is.weekday())
-# print(calendar.day_name[week_index])
-
+# print(today_is)                                 |
+# print(calendar.today_is)                        |
+# print(today_is.weekday())                       |
+# print(calendar.day_name[week_index])            |
+# -------------------------------------------------
 
 first_name = input("What is your first name?")
 # set variable for first name
@@ -99,3 +99,12 @@ real_length = first_name_length - space
 
 print(f"Your first name without and spaces would be {real_length}")
 
+# reusable 
+def real_length2(name):
+    space2 = 0
+    for char in name:
+        if char == " ":
+            space2 += 1
+    return len(name) - space2
+print(f"The amount of letters in your first name would be {real_length2(first_name)} without spaces. "
+      f"Your last name would have {real_length2(last_name)} letters without spaces.")
